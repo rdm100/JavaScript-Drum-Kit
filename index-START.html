@@ -69,6 +69,12 @@ window.addEventListener('keydown', function(e){
 	console.log(key);
 	key.classList.add('playing');
 });
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => {
+	key.addEventListener("transitioned", removeTransition);
+}
+
 </script>
 
 </body>
